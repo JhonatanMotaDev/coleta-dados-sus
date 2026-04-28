@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "ESF Saúde da Família",
+    "slug": "esf-saude-familia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "jsEngine": "hermes",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1565C0"
+      }
+    }
+  }
+}
