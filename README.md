@@ -33,6 +33,15 @@ Aplicativo mobile desenvolvido para suporte a agentes e profissionais de saúde 
 
 ---
 
+
+## Imagens do projeto:
+
+<img width="256" height="512" alt="0eb273d4-5ebf-4ec2-aa97-f1de7ce587a4" src="https://github.com/user-attachments/assets/ddd92c2c-61dd-4291-add5-aa536fc740a9" />
+<img width="256" height="512" alt="885d0829-60ac-4b2a-af26-d9543649307c" src="https://github.com/user-attachments/assets/9ed5645e-587f-4bf1-ad67-f24b730b8400" />
+<img width="256" height="512" alt="fe578591-a6ad-47c7-8c00-d2a85279c181" src="https://github.com/user-attachments/assets/9c1c4986-7d99-4873-9cbb-17f8d027e26b" />
+<img width="256" height="512" alt="1b43e182-6e6e-4c37-9660-3b5a79ff1ba2" src="https://github.com/user-attachments/assets/2ed4f854-d963-4ff7-a4fa-06af045640ea" />
+
+
 ## 🏃 Como Rodar
 
 ### Pré-requisitos
