@@ -146,7 +146,8 @@ esf:records:{susNumber}   → registros clínicos por paciente
 | Nome | GitHub |
 |------|--------|
 | Jhonatan Mota | [@JhonatanMotaDev](https://github.com/JhonatanMotaDev) |
-
+| Wanderson Rodrigues | [@WandersonRodrigues](https://github.com/WandersonRodrigues) |
+| Marcelo Bastos | [@MarceloBastos](https://github.com/MarceloBastos) |
 ---
 
 ## 📄 Licença
