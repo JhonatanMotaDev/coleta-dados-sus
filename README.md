@@ -2,9 +2,6 @@
 
 Aplicativo mobile desenvolvido para suporte a agentes e profissionais de saúde na **Atenção Primária (ESF)**, com foco no acompanhamento de pacientes com **Hipertensão Arterial Sistêmica (HAS)** e **Diabetes Mellitus (DM)**.
 
-> Desenvolvido na disciplina **Inovação e Tecnologia**
-> Prof. Claudio Janes, Wille e Renato — **Grupo B**
-
 ---
 
 ## 📱 Telas do Aplicativo
