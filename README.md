@@ -138,6 +138,11 @@ Escaneie o QR code com o **Expo Go** no celular.
         └── typography.js
 ```
 
+## Imagens do projeto
+
+<img width="3151" height="2619" alt="Component 1" src="https://github.com/user-attachments/assets/b8bb0709-b3c6-4e37-9b74-6a978abfa9b1" />
+
+
 ---
 
 ## Modelo de Dados
