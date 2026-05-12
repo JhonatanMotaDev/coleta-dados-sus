@@ -1,45 +1,42 @@
-# 🏥 ESF Saúde da Família — Sistema de Apoio à Coleta de Dados
+# DataSUS — Sistema de Apoio à Coleta de Dados
 
 Aplicativo mobile desenvolvido para suporte a agentes e profissionais de saúde na **Atenção Primária (ESF)**, com foco no acompanhamento de pacientes com **Hipertensão Arterial Sistêmica (HAS)** e **Diabetes Mellitus (DM)**.
 
+> Desenvolvido na disciplina **Desenvolvimento Mobile**
+> Prof. PhD. Rodrigo Baleeiro
+
 ---
 
-## 📱 Telas do Aplicativo
+## Telas do Aplicativo
 
 | Tela | Descrição |
 |------|-----------|
 | **Home** | Cadastro de paciente com validação do Cartão SUS |
 | **Lista de Pacientes** | Todos os pacientes com busca e último risco registrado |
-| **Perfil do Paciente** | Dashboard com últimas medições e estatísticas |
+| **Perfil do Paciente** | Dashboard com últimas medições, visitas e medicamentos |
 | **Formulário HAS** | Registro de pressão arterial com classificação em tempo real |
 | **Formulário DM** | Registro de glicemia e HbA1c com classificação por métrica |
+| **Visita Domiciliar** | Registro de visitas com status, queixas e próxima data |
+| **Histórico de Visitas** | Lista completa de visitas domiciliares por paciente |
+| **Medicamentos** | Gerenciamento de medicamentos por paciente |
 | **Histórico** | Registros agrupados por data com filtros e exportação |
 | **Gráficos** | Evolução temporal das medições com estatísticas |
 
 ---
 
-## 🧱 Stack Técnica
+## Stack Técnica
 
 - **React Native** via Expo SDK 54
 - **Expo Go** — sem build nativo necessário
 - **AsyncStorage** — banco de dados local
 - **React Navigation v6** — navegação Stack
-- **react-native-chart-kit** — gráficos de evolução
+- **react-native-chart-kit** + **react-native-svg** — gráficos de evolução
 - **date-fns** — datas em pt-BR
 - **expo-linear-gradient** — visual
 
 ---
 
-
-## Imagens do projeto:
-
-<img width="256" height="512" alt="0eb273d4-5ebf-4ec2-aa97-f1de7ce587a4" src="https://github.com/user-attachments/assets/ddd92c2c-61dd-4291-add5-aa536fc740a9" />
-<img width="256" height="512" alt="885d0829-60ac-4b2a-af26-d9543649307c" src="https://github.com/user-attachments/assets/9ed5645e-587f-4bf1-ad67-f24b730b8400" />
-<img width="256" height="512" alt="fe578591-a6ad-47c7-8c00-d2a85279c181" src="https://github.com/user-attachments/assets/9c1c4986-7d99-4873-9cbb-17f8d027e26b" />
-<img width="256" height="512" alt="1b43e182-6e6e-4c37-9660-3b5a79ff1ba2" src="https://github.com/user-attachments/assets/2ed4f854-d963-4ff7-a4fa-06af045640ea" />
-
-
-## 🏃 Como Rodar
+## Como Rodar
 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org/) instalado
@@ -64,7 +61,7 @@ Escaneie o QR code com o **Expo Go** no celular.
 
 ---
 
-## 🏥 Lógica Clínica
+## Lógica Clínica
 
 ### Classificação de Pressão Arterial (SBC/AHA 2023)
 
@@ -96,7 +93,7 @@ Escaneie o QR code com o **Expo Go** no celular.
 
 ---
 
-## 🗂️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 /
@@ -110,6 +107,9 @@ Escaneie o QR code com o **Expo Go** no celular.
     │   ├── PatientDetailScreen.js
     │   ├── HASFormScreen.js
     │   ├── DMFormScreen.js
+    │   ├── HomeVisitFormScreen.js
+    │   ├── VisitHistoryScreen.js
+    │   ├── MedicationScreen.js
     │   ├── HistoryScreen.js
     │   └── ChartScreen.js
     ├── components/
@@ -117,11 +117,15 @@ Escaneie o QR code com o **Expo Go** no celular.
     │   ├── ClinicalBadge.js
     │   ├── MetricCard.js
     │   ├── RiskBadge.js
+    │   ├── TrendBadge.js
+    │   ├── AdherenceBadge.js
     │   ├── EmptyState.js
     │   └── LoadingSpinner.js
     ├── hooks/
     │   ├── usePatients.js
     │   ├── useClinicalRecords.js
+    │   ├── useHomeVisits.js
+    │   ├── useMedications.js
     │   └── useRiskClassification.js
     ├── utils/
     │   ├── riskClassification.js
@@ -136,26 +140,29 @@ Escaneie o QR code com o **Expo Go** no celular.
 
 ---
 
-## 💾 Modelo de Dados
+## Modelo de Dados
 
 Os dados são armazenados localmente via **AsyncStorage**:
 
 ```
 esf:patients              → lista de pacientes
-esf:records:{susNumber}   → registros clínicos por paciente
+esf:records:{susNumber}   → registros clínicos por paciente (HAS/DM)
+esf:visits:{susNumber}    → visitas domiciliares por paciente
+esf:meds:{susNumber}      → medicamentos por paciente
 ```
 
 ---
 
-## 👥 Equipe
+## Equipe
 
 | Nome | GitHub |
 |------|--------|
 | Jhonatan Mota | [@JhonatanMotaDev](https://github.com/JhonatanMotaDev) |
-| Wanderson Rodrigues | [@WandersonRodrigues](https://github.com/WandersonRodrigues) |
+| Wanderson Rodrigues | [@WanRod](https://github.com/WandersonRodrigues) |
 | Marcelo Bastos | [@MarceloBastos](https://github.com/MarceloBastos) |
+
 ---
 
-## 📄 Licença
+## Licença
 
-Este projeto é de uso acadêmico — disciplina Inovação e Tecnologia.
+Este projeto é de uso acadêmico — disciplina Desenvolvimento Mobile.
